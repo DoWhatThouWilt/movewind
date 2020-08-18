@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Categories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "todos": {
+      "via": "categories",
+      "collection": "todos",
+      "dominant": true
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}
